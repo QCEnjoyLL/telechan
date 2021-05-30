@@ -17,7 +17,7 @@ const sendkey = () => (ctx: any) => {
 
   replyToMessage(ctx, messageId, `${userName} , Your sendkey is 🔑 ${sendkey} \n 
   🚀 Use follow url to send message : \n 
-  ${site_url}/api/send?sendkey=<sendkey>&text=<text>`);
+  ${VERCEL_URL}/api/send?sendkey=<sendkey>&text=<text>`);
   // replyToMessage(ctx, messageId, `Hello, ${userName} (user_id: ${ctx.from.id})! \n Your Message id is: ${messageId}`);
 };
 
